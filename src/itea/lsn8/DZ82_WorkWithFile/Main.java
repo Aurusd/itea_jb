@@ -2,10 +2,13 @@ package itea.lsn8.DZ82_WorkWithFile;
 
 import java.io.RandomAccessFile;
 
+/**
+ * считываем текстовый файл, меняем в нем все слова “Hello” на “1234” и записываем изменения в тот же файл
+ */
+
 public class Main {
 
     public static void main(String[] args) throws Exception {
-    // считываем текстовый файл, меняем в нем все слова “Hello” на “1234” и записываем изменения в тот же файл
         try {
             RandomAccessFile r = new RandomAccessFile("C:\\Temp\\1.txt", "rw");
             try {

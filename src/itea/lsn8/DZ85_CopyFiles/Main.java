@@ -5,6 +5,9 @@ import java.io.FilenameFilter;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
+/**
+ * Копирование всех файлов из одного каталога в другой
+ */
 
 public class Main {
 
@@ -12,7 +15,6 @@ public class Main {
     static String pathDest = "C:\\Temp\\22\\";
 
     public static void main(String[] args) throws Exception {
-        // копирование всех файлов из одного каталога в другой
         File file = new File(pathTarg);
         FilenameFilter filter = new MyFilter();
         String[] ar = file.list(filter);

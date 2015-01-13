@@ -3,9 +3,9 @@ package itea.lsn12.Wrk_ArrayIex;
 import java.util.Arrays;
 
 /**
- *
+ * Created by Iex on 12/25/2014.
  */
-public class Main {
+public class Task_12_1 {
 
     static class SmartArray<E> {
         private Object[] elements;
@@ -20,6 +20,7 @@ public class Main {
             lastIndex = elements.length - 1;
         }
 
+        @SuppressWarnings("unchecked")
         public E get(int index) {
             return (E)elements[index];
         }
@@ -43,5 +44,7 @@ public class Main {
         SmartArray<String> arrayS = new SmartArray<String>(str);
         System.out.println(arrayS);
         System.out.println(arrayS.get(4));
+
+        new SmartArray<String>(new String[] {"1", ""}).get(0);
     }
 }

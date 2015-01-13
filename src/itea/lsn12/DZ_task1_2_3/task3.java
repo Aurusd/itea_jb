@@ -1,12 +1,8 @@
-package itea.lsn12.DZ12;
+package itea.lsn12.DZ_task1_2_3;
 
 import java.io.File;
 import java.io.FilenameFilter;
-import java.io.RandomAccessFile;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.Iterator;
 
 /**
  * Написать ф-ю, которая сохранит содержимое каталога в список и выведет первые 5 элементов на экран

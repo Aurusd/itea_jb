@@ -1,4 +1,4 @@
-package itea.lsn12.DZ12;
+package itea.lsn12.DZ_task1_2_3;
 
 import java.util.ArrayList;
 import java.util.Iterator;

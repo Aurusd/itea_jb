@@ -5,9 +5,13 @@ import java.io.FilenameFilter;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ * ищем в каталоге все файлы с расширениями из списка
+ */
+
 public class Main {
 
-	public static void main(String[] args) { // ищем в каталоге все файлы с расширениями из списка
+	public static void main(String[] args) {
 		ArrayList<String> list = new ArrayList<String>();
 		String[] extList = {".log", ".txt", ".html"};
 		try {

@@ -1,4 +1,4 @@
-package itea.lsn11.DZ111_Human;
+package itea.lsn11.DZ_task1_2_Human;
 
 import java.io.*;
 import java.util.Arrays;
@@ -19,6 +19,7 @@ public class Main {
             System.out.println(h);
 
         // запись
+        System.out.println("Проводим сериализацию списка, изменив перед этим имена.");
         try {
             FileOutputStream fos = new FileOutputStream("D:\\Temp\\humans.out");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
@@ -34,6 +35,7 @@ public class Main {
         catch (IOException ex) {}
 
         // чтение
+        System.out.println("Читаем из файла:");
         FileInputStream fis = new FileInputStream("D:\\Temp\\humans.out");
         ObjectInputStream oin = new ObjectInputStream(fis);
         try {
