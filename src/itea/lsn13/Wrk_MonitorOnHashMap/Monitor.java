@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.Set;
 import java.io.*;
 
-public class Monitor1
+public class Monitor
 {
     private class MonitorThread extends Thread {
         
@@ -15,7 +15,7 @@ public class Monitor1
         private int timeout;
         private HashMap<String, Long> prev = new HashMap<String, Long>();
         private HashMap<String, Long> curr = new HashMap<String, Long>();
-        private IFileEvents1 events;
+        private IFileEvents events;
         
         public MonitorThread(String path) {
             this.path = path;
@@ -44,11 +44,11 @@ public class Monitor1
             timeout = value;
         }
         
-        public IFileEvents1 getEvents() {
+        public IFileEvents getEvents() {
             return events;
         }
         
-        public void setEvents(IFileEvents1 value) {
+        public void setEvents(IFileEvents value) {
             events = value;
         }
         
@@ -115,10 +115,10 @@ public class Monitor1
 
     private String path;
     private MonitorThread thread;
-    private IFileEvents1 events;
+    private IFileEvents events;
     private int timeout = 1000;
     
-    public Monitor1(String path) {
+    public Monitor(String path) {
         this.path = path;
     }
     
@@ -141,11 +141,11 @@ public class Monitor1
         timeout = value;
     }
         
-    public IFileEvents1 getEvents() {
+    public IFileEvents getEvents() {
         return events;
     }
         
-    public void setEvents(IFileEvents1 value) {
+    public void setEvents(IFileEvents value) {
         events = value;
     }
 }

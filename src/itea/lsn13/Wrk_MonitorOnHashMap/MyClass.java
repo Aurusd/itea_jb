@@ -1,11 +1,11 @@
 package itea.lsn13.Wrk_MonitorOnHashMap;
 
-public class MyClass1 {
+public class MyClass {
 
     static class MyStop extends Thread {
-        private Monitor1 s;
+        private Monitor s;
         
-        public MyStop(Monitor1 s) {
+        public MyStop(Monitor s) {
             this.s = s;
         }
         
@@ -14,7 +14,7 @@ public class MyClass1 {
         }
     }
 
-    private static class MyEvents implements IFileEvents1 {
+    private static class MyEvents implements IFileEvents {
         public void onFileChanged(String path) {
             System.out.println("File changed: " + path);
         }
@@ -29,7 +29,7 @@ public class MyClass1 {
     }
 
     public static void main(String[] args) {
-        Monitor1 m = new Monitor1("c:\\temp");
+        Monitor m = new Monitor("c:\\temp");
         m.setTimeout(2000);
         m.setEvents(new MyEvents());
         m.start();
