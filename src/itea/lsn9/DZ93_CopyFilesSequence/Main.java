@@ -2,6 +2,9 @@ package itea.lsn9.DZ93_CopyFilesSequence;
 
 import java.io.*;
 
+/** Написать программу, которая скопирует несколько файлов в один.
+ *  Подумать как для этого использовать java.io.SequenceInputStream.       НЕ СДЕЛАНО
+ */
 public class Main {
 
     static String pathTarget = "C:\\Temp\\11\\";
@@ -24,7 +27,6 @@ public class Main {
             }
         };
         SequenceInputStream sis = new SequenceInputStream(n1, n2);*/
-
         FileOutputStream out = new FileOutputStream(pathTarget + "result_f.txt");
         try {
             for (int i = 0; i < ar.length; i++) {

@@ -5,8 +5,8 @@ import java.io.FilenameFilter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-/**
- * ищем в каталоге все файлы с расширениями из списка
+/** Модифицировать проект FindFiles так, чтобы программа
+ *  искала в каталоге все файлы с расширениями из списка.
  */
 
 public class Main {

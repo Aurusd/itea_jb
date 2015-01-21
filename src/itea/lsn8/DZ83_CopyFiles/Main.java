@@ -5,9 +5,8 @@ import java.io.FilenameFilter;
 import java.io.RandomAccessFile;
 
 /**
- * Копирование всех файлов из одного каталога в другой
+ * Написать программу для копирования всех файлов из одного каталога в другой.
  */
-
 public class Main {
     static String pathTarg = "C:\\Temp\\11\\";
     static String pathDest = "C:\\Temp\\22\\";

@@ -5,12 +5,12 @@ import java.io.FilenameFilter;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
-/**
- * Копирование всех файлов из одного каталога в другой
+/** Разобраться с java.io.BufferedInputStream и java.io.BufferedOutputStream.
+ *  Подумать как улучшить программу №3 с помощью этих классов.
+ *  Прогр.№3: Написать программу для копирования всех файлов из одного каталога в другой.
  */
 
 public class Main {
-
     static String pathTarg = "C:\\Temp\\11\\";
     static String pathDest = "C:\\Temp\\22\\";
 

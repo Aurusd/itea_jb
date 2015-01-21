@@ -2,6 +2,9 @@ package itea.lsn8.DZ86_CopyFilesSequence;
 
 import java.io.*;
 
+/** Написать программу, которая скопирует несколько файлов в один.
+ *  Подумать как для этого использовать java.io.SequenceInputStream.       НЕ СДЕЛАНО
+ */
 public class Main {
 
     static String pathTarg = "C:\\Temp\\11\\";

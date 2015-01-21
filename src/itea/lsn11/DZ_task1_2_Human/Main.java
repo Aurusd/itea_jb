@@ -3,13 +3,10 @@ package itea.lsn11.DZ_task1_2_Human;
 import java.io.*;
 import java.util.Arrays;
 
-/**
- *
+/** Добавить в класс "человек" константы: пол, темперамент.
+ *  Реализовать возможность сериализации для класса "человек".
  */
 public class Main {
-
-    // Добавить в класс "человек" константы: пол, темперамент.
-    // Реализовать возможность сериализации для класса "человек".
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         Human[] list = {new Human("Вася", 40, 0, 0), new Human("Петя", 20, 0 , 1),

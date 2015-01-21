@@ -6,6 +6,9 @@ import java.io.RandomAccessFile;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/** Написать программу, которая создаст текстовый файл и запишет в него список
+ *  файлов (путь, имя, дата создания) из заданного каталога.
+ */
 public class Main {
 
     static String path = "C:\\Temp\\";

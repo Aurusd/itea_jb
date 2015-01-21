@@ -8,7 +8,7 @@ import java.io.FileOutputStream;
  */
 public class task26 {
     public static void main(String[] args) throws Exception {
-        copyFile("c:\\Temp\\1.txt", "c:\\Temp\\2.txt");
+        copyFile("c:\\Temp\\1.docx", "c:\\Temp\\2.docx");
     }
 
     public static class Counter extends Thread {
@@ -31,9 +31,8 @@ public class task26 {
                     r = in.read(buf, 0, buf.length);
                     if (r > 0) {
                         Counter c = new Counter();
-                        c.start();
+                        c.run(out, buf, r);
                     }
-                        //out.write(buf, 0, r);
                 } while (r > 0);
             } finally {
                 out.close();
