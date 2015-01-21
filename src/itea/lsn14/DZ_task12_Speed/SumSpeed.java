@@ -25,7 +25,7 @@ public class SumSpeed {
         System.out.println("Сумма элементов = " + sumAr1 + ", время суммирования - "
                 + sdf.format(timeStandartFinish) + " мсек.");
 
-        CurrentSum sumAr2 = new CurrentSum(0);
+        CurrSum sumAr2 = new CurrSum(0);
         long timeThreadStart = System.currentTimeMillis();
         for (int i = 0; i < ar1.length; i++) {
             SumByThreads sbt = new SumByThreads(sumAr2, ar1[i]);

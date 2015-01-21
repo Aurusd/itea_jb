@@ -1,9 +1,9 @@
 package itea.lsn14.DZ_task12_Speed;
 
 public class SumByThreads extends Thread {
-    CurrentSum sum;
+    CurrSum sum;
     int cell;
-    public SumByThreads(CurrentSum sum, int cell) {
+    public SumByThreads(CurrSum sum, int cell) {
         this.sum = sum;
         this.cell = cell;
     }
